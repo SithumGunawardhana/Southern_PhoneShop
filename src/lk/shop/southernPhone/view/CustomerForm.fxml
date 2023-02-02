@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="809.0" prefWidth="1143.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.shop.southernPhone.controller.CustomerFormController">
+   <children>
+      <AnchorPane fx:id="pane2" layoutX="10.0" layoutY="10.0" prefHeight="792.0" prefWidth="1127.0">
+         <children>
+            <ImageView fitHeight="826.0" fitWidth="1127.0">
+               <image>
+                  <Image url="@../assents/logo/1092582.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="130.0" layoutY="28.0" text="Customer id*" textFill="#f4f6f8">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="806.0" layoutY="134.0" text="Customer date of birth*" textFill="#f4f6f8">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="458.0" layoutY="129.0" text="Customer  number*" textFill="#f4f6f8">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="482.0" layoutY="28.0" text="Customer name*" textFill="#f4f6f8">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="851.0" layoutY="33.0" text="Customer age*" textFill="#f4f6f8">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="134.0" text="Customer address*" textFill="#f4f6f8">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtId" layoutX="63.0" layoutY="66.0" onAction="#CustomerIdOnAction" prefHeight="46.0" prefWidth="272.0" />
+            <TextField fx:id="txtName" layoutX="426.0" layoutY="64.0" prefHeight="46.0" prefWidth="272.0" />
+            <TextField fx:id="txtAge" layoutX="795.0" layoutY="68.0" prefHeight="46.0" prefWidth="272.0" />
+            <TextField fx:id="txtAddress" layoutX="65.0" layoutY="179.0" prefHeight="46.0" prefWidth="272.0" />
+            <TextField fx:id="txtNumber" layoutX="432.0" layoutY="177.0" prefHeight="46.0" prefWidth="272.0" />
+            <TextField fx:id="txtDOB" layoutX="793.0" layoutY="179.0" prefHeight="46.0" prefWidth="272.0" />
+            <Button fx:id="btnSave" layoutX="63.0" layoutY="273.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="41.0" prefWidth="92.0" style="-fx-background-color: blue;" text="Save" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tblCustomer" layoutX="23.0" layoutY="365.0" prefHeight="370.0" prefWidth="1077.0">
+               <columns>
+                  <TableColumn fx:id="colCustomerId" prefWidth="176.40106582641602" text="Id" />
+                  <TableColumn fx:id="colCustomerName" prefWidth="180.59896850585938" text="Name" />
+                  <TableColumn fx:id="colCustomerAge" minWidth="0.0" prefWidth="193.9429931640625" text="Age" />
+                  <TableColumn fx:id="colCustomerAddress" prefWidth="175.0570068359375" text="Address" />
+                  <TableColumn fx:id="colCustomerNumber" prefWidth="171.8565673828125" text="Number" />
+                  <TableColumn fx:id="colCustomerDOB" prefWidth="185.85650634765625" text="Dob" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="jfxbtnHome" layoutX="21.0" layoutY="8.0" onAction="#HomeOnAction" prefHeight="24.0" prefWidth="38.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="33.0">
+                     <image>
+                        <Image url="@../assents/logo/clipart4338423.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Button fx:id="btnClear" layoutX="201.0" layoutY="272.0" mnemonicParsing="false" onAction="#ClearOnAction" prefHeight="44.0" prefWidth="91.0" text="Clear" textFill="#171717">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
